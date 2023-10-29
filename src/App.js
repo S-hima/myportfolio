@@ -9,7 +9,8 @@ function App() {
       <Hero />
       {/* <About />
       <Service />
-      <Contact /> */}
+      <Contact />
+       */}
     </>
   );
 }
