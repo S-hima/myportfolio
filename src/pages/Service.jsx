@@ -20,6 +20,12 @@ const Service = () => {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
 
     },
+    {
+      image: Image,
+      name: "Digital marketing",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
+
+    },
   
 
   ]
@@ -27,7 +33,7 @@ const Service = () => {
     <div>
       <h1 className='text-xl font-bold text-center my-8 mx-5 '>Our Service</h1>
 
-      <div className='flex flex-row justify-center gap-4 mx-8 '>
+      <div className='grid grid-cols-3 justify-center  gap-4 mx-8 '>
         {serviceData.map((service,Index) =>(
           <div className='flex flex-col justify-center items-center rounded-lg shadow-lg p-4 w-[300px]' key={Index}>
           <img className='rounded-full object-cover h-40 w-40 ' src={Image} alt=""/>
