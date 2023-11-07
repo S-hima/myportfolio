@@ -3,6 +3,7 @@ import Image from '../assets/IMG-20221126-WA0008.jpg'
 import { useState } from 'react'
 import {  ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 
 const Contact = () => {
@@ -15,7 +16,18 @@ const Contact = () => {
   console.log(firstname, lastname, phone, address, email, message);
   const handleClick = (e) => {
     e.preventDefault();
-    // if (firstname && lastname && phone && address && email && message) {
+    
+    if (firstname && lastname && phone && address && email && message) {
+      const formdata = new FormData();
+      formdata.append("firstname",firstname);
+      formdata.append("lastname",lastname);
+      formdata.append("phone",phone);
+      formdata.append("address",address);
+      formdata.append("email",email);
+      formdata.append("message",message);
+
+      axios.post('https://achyut.acetechnepal.com/contact/',formdata)
+       .then(res=>toast("form submit successfully"));
       toast("Form Submit Sucessfully");
       setFirstname("");
       setLastname("");
@@ -23,7 +35,7 @@ const Contact = () => {
       setAddress("");
       setEmail("");
       setMessage("");
-    // }
+    }
 
   }
   return (
