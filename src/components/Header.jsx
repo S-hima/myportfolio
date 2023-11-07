@@ -28,6 +28,9 @@ const Header = () => {
         <Link to="/contact"className= {`font-semibold text-md text-red-700 hover:text-red-700 
          hover:border-b-2 ${"/contact"}`}>
           Contact</Link>
+          <Link to="/profile" className= {`font-semibold text-md text-red-700 hover:text-red-700 
+         hover:border-b-2 ${isActive("/profile")}`}>
+          Profile</Link>
       </div>
     </nav>
   </header>

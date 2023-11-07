@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../assets/IMG_2124.JPG"
+import Seema from "../assets/Seema.JPG"
 const Hero = () => {
   return (
     <div className= "flex justify-center mx-10 items-center gap-20 mt-10">
@@ -15,7 +15,7 @@ const Hero = () => {
 
 
       <div className='w-[30%] flex gap-50  '>
-        <img  className="h-[400px] w-full object-cover rounded-2xl" src={image}  />
+        <img  className="h-[400px] w-full object-cover rounded-2xl" src={Seema}  />
       </div>
 
 

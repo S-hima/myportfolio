@@ -8,19 +8,19 @@ import axios from 'axios';
 
 const Contact = () => {
   const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [University, setUniversity] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  console.log(firstname, lastname, phone, address, email, message);
+  console.log(firstname, University, phone, address, email, message);
   const handleClick = (e) => {
     e.preventDefault();
     
-    if (firstname && lastname && phone && address && email && message) {
+    if (firstname && University && phone && address && email && message) {
       const formdata = new FormData();
       formdata.append("firstname",firstname);
-      formdata.append("lastname",lastname);
+      formdata.append("lastname",University);
       formdata.append("phone",phone);
       formdata.append("address",address);
       formdata.append("email",email);
@@ -30,7 +30,7 @@ const Contact = () => {
        .then(res=>toast("form submit successfully"));
       toast("Form Submit Sucessfully");
       setFirstname("");
-      setLastname("");
+      setUniversity("");
       setPhone("");
       setAddress("");
       setEmail("");
@@ -52,8 +52,8 @@ const Contact = () => {
                 <input onChange={e => setFirstname(e.target.value)} value={firstname} className='px-3 py-2 border w-full focus:outline-none focus:ring-blue-500 rounded-md' type="text" name='firstname' placeholder='firstname' required />
               </div>
               <div>
-                <label htmlFor="name" >Lastname</label>
-                <input onChange={e => setLastname(e.target.value)} value={lastname} className='px-3 py-2 border w-full focus:outline-none focus:ring-blue-500 rounded-md' type="text" name='lastname' placeholder='lastname' required />
+                <label htmlFor="name" >University</label>
+                <input onChange={e => setUniversity(e.target.value)} value={University} className='px-3 py-2 border w-full focus:outline-none focus:ring-blue-500 rounded-md' type="text" name='University' placeholder='University' required />
               </div>
               <div>
                 <label htmlFor="phone" >Phone</label>
