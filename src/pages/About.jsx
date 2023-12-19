@@ -12,9 +12,9 @@ const About = () => {
           to industry tools, events, learning resources and a growing student community. </p>
         <p></p>
         <div className='flex justify-center gap-5'>
-        <div className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full  text-center'>10+ project</div>
+        {/* <div className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full  text-center'>10+ project</div>
         <div className='bg-black flex justify-center items-center text-white px-4 py-2  rounded-full text-center'>20+ client</div>
-        <div className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full text-center'>100+ review</div>
+        <div className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full text-center'>100+ review</div> */}
         </div>
         </div>
 

@@ -6,32 +6,32 @@ const Service = () => {
     {
       image: Image,
       name: "Web development",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
+      description: " I can convert your design to HTML/CSS and JS or according to your need.",
     },
     {
       image: Image,
-      name: "App development",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
+      name: "Web development",
+      description: "I can convert your design to HTML/CSS and JS or according to your need.",
 
     },
-    {
-      image: Image,
-      name: "Digital marketing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
+    // {
+    //   image: Image,
+    //   name: "Digital marketing",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
 
-    },
-    {
-      image: Image,
-      name: "Digital marketing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
+    // },
+    // {
+    //   image: Image,
+    //   name: "Digital marketing",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt impedit ea pariatur odit necessitatibus amet, maxime quisquam, vero animi, ab nulla. Porro doloremque dolores nulla tenetur, voluptatibus aperiam natus?",
 
-    },
+    // },
   
 
   ]
   return (
     <div>
-      <h1 className='text-xl font-bold text-center my-8 mx-5 '>Our Service</h1>
+      <h1 className='text-xl font-bold text-center my-8 mx-5 '>My Services</h1>
 
       <div className='grid grid-cols-3 justify-center  gap-4 mx-8 '>
         {serviceData.map((service,Index) =>(
@@ -39,7 +39,7 @@ const Service = () => {
           <img className='rounded-full object-cover h-40 w-40 ' src={Image} alt=""/>
           <h1 className='font-semibold text-lg my-2'>{service.name}</h1>
           <p className='text-justify'>{service.description}</p>
-          <button className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full hover:bg-white hover:text-black text-center mt-4'>Read More</button>
+          {/* <button className='bg-black flex justify-center items-center text-white px-4 py-2 rounded-full hover:bg-white hover:text-black text-center mt-4'>Read More</button> */}
         </div>
 
         ))}
